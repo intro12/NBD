@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvnf1vhYBEUpkzGNlyGZ3uMWXBQA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s23679>; rel="up"
+Last-Modified: Thu, 17 Jun 2021 17:50:35 GMT
+ETag: "3ArSq7lTk9eSCj043YZdXD"
+Date: Thu, 17 Jun 2021 17:51:50 GMT
+Content-Type: application/json
+Content-Length: 98
+
+{"name": "Wiedzmin 3: Dziki Gon", "genre": "RPG", "price": 100.00, "studioName": "CD Project RED"}

@@ -1,0 +1,24 @@
+1.
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Assassins Creed: Valhalla", "genre": "RPG", "price": 200.00, "studioName": "Ubisoft"}' http://localhost:8098/buckets/s23679/keys/acvalhalla
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Wiedzmin 3: Dziki Gon", "genre": "RPG", "price": 100.00, "studioName": "CD Project RED"}' http://localhost:8098/buckets/s23679/keys/wiedzmin3
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Heroes of Might and Magic III", "genre": "TBS", "price": 25.50, "studioName": "The 3DO Company"}' http://localhost:8098/buckets/s23679/keys/heroes3
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Binding of Isaac", "genre": "Dungeon Crawl", "price": 59.90, "studioName": "Edmund McMillen"}' http://localhost:8098/buckets/s23679/keys/isaac
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Red Dead Redemption 2", "genre": "RPG", "price": 250.50, "studioName": "Rockstar"}' http://localhost:8098/buckets/s23679/keys/rdr2
+2.
+curl -i -XGET  http://localhost:8098/buckets/s23679/keys/wiedzmin3
+3.
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Red Dead Redemption 2", "genre": "RPG", "price": 250.50, "studioName": "Rockstar", "premiereDate":2018-10-26 }' http://localhost:8098/buckets/s23679/keys/rdr2
+4.
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Binding of Isaac", "genre": "Dungeon Crawl", "price": 59.90}' http://localhost:8098/buckets/s23679/keys/isaac
+5.
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Assassins Creed: Valhalla", "genre": "RPG", "price": 260.00, "studioName": "Ubisoft"}' http://localhost:8098/buckets/s23679/keys/acvalhalla
+6.
+curl -i -XDELETE http://localhost:8098/buckets/s23679/keys/isaac
+7.
+curl -i -XGET  http://localhost:8098/buckets/s23679/keys/takagiera
+8.
+curl -i -XPOST -H "Content-Type: application/json" -d '{"name": "Giera"}' http://localhost:8098/buckets/s23679/keys
+9.
+curl -i -XGET  http://localhost:8098/buckets/s23679/keys/EK9Z43PuHJuhAcTwopF87SayuCy
+10.
+curl -i -XDELETE http://localhost:8098/buckets/s23679/keys/EK9Z43PuHJuhAcTwopF87SayuCy

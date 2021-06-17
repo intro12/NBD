@@ -1,0 +1,6 @@
+Dodawana gra:  {'name': 'Cyberpunk 2077', 'genre': 'RPG', 'price': 150.0, 'studioName': 'CD Project RED'}
+Wynik po dodaniu gry:  b'{"name": "Cyberpunk 2077", "genre": "RPG", "price": 150.0, "studioName": "CD Project RED"}'
+Modyfikacja pola price z 150.00 na 200.00
+Wynik po modfyfikacji gry:  b'{"name": "Cyberpunk 2077", "genre": "RPG", "price": 200.0, "studioName": "CD Project RED"}'
+Usuwam gre
+Wynik po modfyfikacji gry:  None
