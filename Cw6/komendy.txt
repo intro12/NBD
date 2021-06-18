@@ -1,0 +1,20 @@
+1.
+MATCH (start:town {name: "Darjeeling"}), (end:peak {name: "Sandakphu"}) MATCH path = allShortestPaths((start)-[*]->(end)) RETURN path
+
+2.
+MATCH (start:town {name: "Darjeeling"}), (end:peak {name: "Sandakphu"}), path = shortestPath((start)-[*]->(end))
+WHERE ALL (r IN relationships(path) WHERE r.winter = "true")
+RETURN path
+
+3.
+MATCH (start:town {name: "Darjeeling"}), (end:peak {name: "Sandakphu"}), paths = (start)-[*]->(end)
+WITH paths, relationships(paths) as routes
+RETURN paths, reduce(distance=0, route in routes|distance+route.distance)as distance
+ORDER BY distance
+
+4.
+MATCH (flights:Flight)-[:ORIGIN]->(airports:Airport) 
+RETURN airports, count(flights) as flightsNum
+ORDER BY flightsNum ASC
+
+5.
